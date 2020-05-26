@@ -1,0 +1,8 @@
+import argparse
+
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('--n', action='append', type=int)
+
+args = parser.parse_args()
+
+print(sum(args.n))
